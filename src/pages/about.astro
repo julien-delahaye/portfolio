@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Delahaye Julien" description="A propos de Delahaye Julien">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos de moi"
+				tagline="Lisez le contenu ci-dessous pour en apprendre plus sur moi."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Julien au travail"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Mon parcours</h2>
+				<div class="content">
+					<p>
+						Après l'obtention de mon bac STI2D mention bien, je me suis rendu à l'IUT de Blois en SGM, une formation que l'on m'avait présentée.
+						J'ai appris énormément de choses ici, que ce soit de la caractérisation de matériaux, leurs mises en forme, l'utilisation de logiciels et de machines.
+						Aussi bien concernant les métaux, céramiques et verres, biomatériaux, polymères et composites.
+					</p>
+					<p>
+						Ce que j'aime, c'est m'informer sur les nouvelles technologies qui touchent aussi bien aux secteurs civils qu'aux secteurs militaires.
+						Je suis très ouvert et toujours prêt à en apprendre plus.
+					</p>
+					<p>
+						
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplôme</h2>
+				<div class="content">
+					<p>Bac STI2D.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<p>Organisé, sérieux, entreprenant</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
