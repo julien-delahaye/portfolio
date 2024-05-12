@@ -1,7 +1,7 @@
 ---
 title: 24h de l'innovation
 publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
+img: /portfolio/assets/stock-2.jpg
 img_alt: Chaine de traitement
 description: |
   Nous avons travaillé à 8 pour l'entreprise OPCA pour la création d'une ligne modulable de traitement de surface.
