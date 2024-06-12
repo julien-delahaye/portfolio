@@ -1,7 +1,7 @@
 ---
 title: Stage en entreprise
 publishDate: 2020-03-02 00:00:00
-img: /portfolio/assets/illustration-entreprise.png
+img: /assets/illustration-entreprise.png
 img_alt: Illustration de l'entreprise
 description: |
   Stage d'une durée de 3 mois pour validée ma deuxième année en SGM2.

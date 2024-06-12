@@ -1,7 +1,7 @@
 ---
 title: Elaboration de deux tapis pour étude de rebond
 publishDate: 2020-03-04 00:00:00
-img: /portfolio/assets/stock-3.jpg
+img: /assets/stock-3.jpg
 img_alt: Tapis
 description: |
   On conçoit deux tapis avec des caractéristiques bien distinctes.

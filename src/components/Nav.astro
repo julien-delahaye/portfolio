@@ -5,9 +5,9 @@ import type { iconPaths } from './IconPaths';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Présentation', href: '/portfolio/' },
-	{ label: 'Projets', href: '/portfolio/work/' },
-	{ label: 'À propos', href: '/portfolio/about/' },
+	{ label: 'Présentation', href: '/' },
+	{ label: 'Projets', href: '/work/' },
+	{ label: 'À propos', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -41,7 +41,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								'link',
 								{
 									active:
-										href === '/portfolio'
+										href === '/'
 											? Astro.url.pathname === href || Astro.url.pathname === '/'
 											: Astro.url.pathname === href
 								},
@@ -79,7 +79,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 							class:list={[
 								'link',
 								{
-									active: Astro.url.pathname === href
+									active:
+										href === '/'
+											? Astro.url.pathname === href || Astro.url.pathname === '/'
+											: Astro.url.pathname === href
 								},
 							]}
 							href={href}
